@@ -43,7 +43,6 @@
             <p class="text-start fs-6">Sistema Utilizado para agendamento de serviços.</p>
             <p>
                 {{#each post}}
-                    {{#dataValues}}
                         <form action="/atualizar" method="POST">
                             <div class="mb-3 text-start">
                                 <input type="hidden" name="id" class="form-control" id="nome" value="{{id}}">
@@ -74,7 +73,6 @@
                                 <button type="submit" class="btn btn-primary">Atualizar</button>
                             </div>
                         </form>
-                    {{/dataValues}}
                 {{/each}}
             </p>
         </div>
